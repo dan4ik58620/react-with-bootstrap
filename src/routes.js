@@ -20,13 +20,12 @@
 // ];
 // export default routes;
 
-
 //Динамический импорт
 // const a = import("./pages/Home").then((module) => {
-  //  console.log(module);
-  //   return module;
-  // });
-  // console.log(a);
+//  console.log(module);
+//   return module;
+// });
+// console.log(a);
 
 // первый способ динамического импорта
 
@@ -43,7 +42,6 @@
 // const AsyncComponentContacts = asyncComponent(() => {
 //   return import("./pages/Contacts");
 // });
-
 
 // const routes = [
 //   {
@@ -63,8 +61,6 @@
 //   },
 // ];
 // export default routes;
-
-
 
 // второй способ динамического импорта
 
@@ -95,11 +91,9 @@
 // ];
 // export default routes;
 
-
-
 // третий способ динамического импорта
 
-import {lazy} from "react";
+import { lazy } from "react";
 
 const routes = [
   {
@@ -112,15 +106,15 @@ const routes = [
   {
     path: "/about",
     exact: true,
-    component:lazy(() => {
-      return import("./pages/Home");
+    component: lazy(() => {
+      return import("./pages/About");
     }),
   },
   {
     path: "/contacts",
     exact: true,
     component: lazy(() => {
-      return import("./pages/Home");
+      return import("./pages/Contacts");
     }),
   },
 ];

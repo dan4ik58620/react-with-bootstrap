@@ -1,14 +1,14 @@
 import React from "react";
-import { Jumbotron, Container } from "react-bootstrap";
+import { Jumbotron, Container, Table } from "react-bootstrap";
 import styled from "styled-components";
-import img1 from "../images/1.jpeg";
+import img0 from "../images/0.jpeg";
 
 const Styles = styled.div`
   .jumbo {
-    background: url(${img1}) no-repeat fixed bottom;
+    background: url(${img0}) no-repeat fixed bottom;
     bacground-size: cover;
     color: white;
-    height: 500px;
+    height: 800px;
     position: relative;
     z-index: -2;
   }
@@ -17,9 +17,9 @@ const Styles = styled.div`
     opacity: 0.7;
     position: absolute;
     z-index: -2;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: -1;
+    left: 1;
+    right: 1;
   }
 `;
 
@@ -28,9 +28,60 @@ function Jumbo() {
     <Styles>
       <Jumbotron className="jumbo" fluid>
         <div classname="overlay"></div>
+        <Container style={{ color: "black" }}>
+
         <Container>
-          <h1>Main title</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+        <h2>Оценки игр:</h2>
+        <div className=""></div>
+        <Table striped bordered hover >
+
+          <tbody>
+            <tr>
+              <td>
+               S.T.A.L.K.E.R.: Shadow Of Chernobyl общий рейтинг игры: 4.5
+              </td>
+            </tr>
+            <tr>
+              <td>
+              Call of Duty 4: Modern Warfare общий рейтинг игры :4.6
+              </td>
+            </tr>
+
+            <tr>
+              <td>Team Fortress 2  общий рейтинг игры: 4.2</td>
+            </tr>
+
+            <tr>
+              <td>FARCRY 3 общий рейтинг игры: 4.6</td>
+            </tr>
+
+            <tr>
+              <td>Mafia: The City of Lost Heaven общий рейтинг игры: 4.6</td>
+            </tr>
+
+            <tr>
+              <td>Assassin’s Creed II общий рейтинг игры: 4.7</td>
+            </tr>
+
+            <tr>
+              <td>Bulletstorm общий рейтинг игры: 4.5</td>
+            </tr>
+
+            <tr>
+              <td>Valorant общий рейтинг игры: 4.0</td>
+            </tr>
+
+            <tr>
+              <td>GTA: San Andreas общий рейтинг игры: 4.5</td>
+            </tr>
+
+            <tr>
+              <td>PUBG Lite общий рейтинг игры: 3.3</td>
+            </tr>
+          </tbody>
+        </Table>
+      </Container>
+
         </Container>
       </Jumbotron>
     </Styles>
