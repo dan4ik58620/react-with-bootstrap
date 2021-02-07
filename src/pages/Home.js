@@ -14,7 +14,7 @@ import img10 from "../images/10.jpeg";
 function Home() {
   return (
     <>
-      <h2>10 ШУТЕРОВ ДЛЯ СЛАБЫХ ПК</h2>
+      <h2 style={{textAlign:"center"}}>10 ШУТЕРОВ ДЛЯ СЛАБЫХ ПК</h2>
       <Slider />
       <Container style={{ paddingTop: "2rem", paddingBottom: "2rem" }}>
       </Container>

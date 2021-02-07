@@ -7,7 +7,7 @@ import { Carousel } from "react-bootstrap";
 function Slider() {
   return (
     <Carousel>
-      <Carousel.Item style={{ height: "800px" ,width:"1500px"}}>
+      <Carousel.Item style={{ height: "900px" ,width:"1950px"}}>
         <img src={img1} alt="img" className="d-block w-100" />
         <Carousel.Caption>
           <h2>S.T.A.L.K.E.R</h2>
@@ -15,7 +15,7 @@ function Slider() {
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item style={{ height: "800px",width:"1500px" }}>
+      <Carousel.Item style={{ height: "900px",width:"1950px" }}>
         <img src={img2} alt="img" className="d-block w-100" />
         <Carousel.Caption>
           <h2>Call of Duty Modern Warfare</h2>
@@ -23,7 +23,7 @@ function Slider() {
         </Carousel.Caption>
       </Carousel.Item>
 
-      <Carousel.Item style={{ height: "800px",width:"1500px" }}>
+      <Carousel.Item style={{ height: "900px",width:"1950px" }}>
         <img src={img3} alt="img" className="d-block w-100" />
         <Carousel.Caption>
           <h2>Team Fortress 2</h2>
