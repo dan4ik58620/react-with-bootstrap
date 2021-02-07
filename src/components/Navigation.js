@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Nav, Button, Container, Modal, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import img21 from "../images/logo.jpeg";
 
 const Styles = styled.div`
   a,
@@ -23,7 +24,7 @@ function Navigation() {
       <Styles>
         <Navbar collabsOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand> <img src="" alt="Logo"></img> </Navbar.Brand>
+            <Navbar.Brand> <img src={img21} alt="logo" height={50} width={50}></img> </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse>
               <Nav>
