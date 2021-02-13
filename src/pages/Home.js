@@ -11,13 +11,26 @@ import img7 from "../images/7.jpeg";
 import img8 from "../images/8.jpeg";
 import img9 from "../images/9.jpeg";
 import img10 from "../images/10.jpeg";
+import Toggle from "../components/Toggler";
+
 function Home() {
   return (
     <>
-      <h2 style={{textAlign:"center"}}>10 ШУТЕРОВ ДЛЯ СЛАБЫХ ПК</h2>
+      <h2 style={{ textAlign: "center" }}>10 ШУТЕРОВ ДЛЯ СЛАБЫХ ПК</h2>
+      <Toggle>
+        {(isOpen, onToggle) => (
+          <>
+            <button type="button" onChange={onToggle} checked={isOpen}>
+              {isOpen ? "hide" : "show"}
+            </button>
+            {isOpen && <Slider />}
+          </>
+        )}
+      </Toggle>
       <Slider />
-      <Container style={{ paddingTop: "2rem", paddingBottom: "2rem" }}>
-      </Container>
+      <Container
+        style={{ paddingTop: "2rem", paddingBottom: "2rem" }}
+      ></Container>
       <Container>
         <Row>
           <Col md={5}>
